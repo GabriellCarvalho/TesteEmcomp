@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>cadastro</title>
+</head>
+
+<body class="crud">
+    <header class="header-c">
+        <h1 class="header-title">Cadastro de Usuario/Administrador</h1>
+        <a class="voltar" href="index.html">Voltar</a></li>
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarUsuario">Cadastrar Usuario/Administrador</button>
+        <table id="table-usuario" class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>cpf</th>
+                    <th>telefone</th>
+                    <th>tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente/Administrador</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome" required>
+                    <input type="email" id="email" class="modal-field" placeholder="E-mail" required>
+                    <input type="text" id="cpf" class="modal-field" placeholder="CPF" required>
+                    <input type="text" id="telefone" class="modal-field" placeholder="Telefone" required>
+                </form>
+                <select name="tipo" id="tipo">
+                    <option value="Usuario">Usuario</option>
+                    <option value="Administrador">Administrador</option>
+                </select>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
